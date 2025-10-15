@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {max-width:1200px; margin:0 auto; padding:0 1rem}
+
+.site-header {background: rgba(255,255,255,0.95);}
+.site-header .header-inner {display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0}
+.brand{display:flex; align-items:center; gap:0.75rem}
+.brand-text h1{font-size:1.1rem; margin:0}
+.tagline{font-size:0.9rem; color:#666}
+.main-nav a{margin:0 0.5rem; color:#333; text-decoration:none; font-weight:600}
+.header-cta{background:#764ba2;color:#fff;padding:0.6rem 1rem;border-radius:999px;text-decoration:none;font-weight:700}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: #fff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #667eea;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.site-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.hero-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.cta {
+    display: inline-block;
+    background: linear-gradient(90deg,#ff6b6b,#764ba2);
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 8px 18px rgba(118,75,162,0.2);
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #25D366;
+    color: #fff;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight:700;
+    margin-right: 0.5rem;
+}
+.whatsapp-btn img{width:20px;height:20px}
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:56px;
+    height:56px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    z-index:9999;
+}
+.whatsapp-float img{width:28px;height:28px}
+.whatsapp-float:hover{transform:translateY(-4px);transition:all .18s ease}
+
+@media (max-width:420px){.whatsapp-float{right:12px;bottom:12px}}
+
+@media (max-width: 700px) {
+    .header-inner {flex-direction: column; gap: 0.5rem;}
+    .header-text h1 {font-size: 1.2rem}
+    .hero-text h2 {font-size: 1.4rem}
+    .hero-text p {font-size: 0.95rem}
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.service{padding:1rem;border-radius:8px;background:#f8f9fb;border-top:4px solid #667eea}
+
+.testimonials{background:linear-gradient(180deg,#fff,#f3f6fb);padding:2rem;border-radius:12px}
+.testimonials .testimonial{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 8px 16px rgba(0,0,0,0.04)}
+
+.contact-form {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.contact-form label {font-weight:600}
+
+.contact {margin-top: 2rem}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.box {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+ul, ol {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.demo-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.demo-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.article-card {
+    padding: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #ffffff, #f7f9fb);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.06);
+}
+
+.article-card h3 {color: #333; margin-bottom: 0.25rem}
+.article-card time {display:block; color:#888; font-size:0.9rem; margin-bottom:0.5rem}
+.article-card p {margin-bottom:0.75rem}
+.article-card a {color:#764ba2; font-weight:600; text-decoration:none}
+
+.card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #764ba2;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    color: #666;
+}
