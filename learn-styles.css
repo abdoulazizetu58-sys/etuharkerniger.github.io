@@ -302,3 +302,226 @@ footer {
 footer p {
     color: #666;
 }
+
+/* ============================================
+   GAMING SECTION — UC PUBG Mobile
+   ============================================ */
+.gaming {
+    background: linear-gradient(160deg, #0d1224 0%, #1a1f3a 60%, #2a1843 100%);
+    color: #f4f6ff;
+    border: 1px solid rgba(255, 165, 0, 0.18);
+    box-shadow: 0 12px 32px rgba(10, 12, 30, 0.35);
+}
+
+.gaming:hover {
+    transform: none;
+}
+
+.gaming h2,
+.gaming h3 {
+    color: #ffb547;
+}
+
+.gaming-head {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.gaming-subtitle {
+    color: #c9cde8;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.gaming-subtitle strong {
+    color: #ffb547;
+}
+
+.gaming-banner {
+    margin: 1.25rem 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.gaming-banner img {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.45),
+                0 0 0 1px rgba(255, 181, 71, 0.2) inset;
+}
+
+.gaming-sub {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.uc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.9rem;
+    margin: 1rem 0 1.75rem;
+}
+
+.uc-card {
+    position: relative;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 181, 71, 0.25);
+    border-radius: 12px;
+    padding: 1.1rem 0.9rem 1rem;
+    text-align: center;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.uc-card:hover {
+    transform: translateY(-4px);
+    border-color: #ffb547;
+    box-shadow: 0 14px 28px rgba(255, 165, 0, 0.18);
+}
+
+.uc-card.popular { border-color: rgba(255, 107, 107, 0.5); }
+.uc-card.pro { border-color: rgba(255, 181, 71, 0.55); }
+.uc-card.ultimate {
+    background: linear-gradient(160deg, rgba(255, 165, 0, 0.18), rgba(118, 75, 162, 0.18));
+    border-color: rgba(255, 215, 100, 0.65);
+}
+
+.uc-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    margin-bottom: 0.55rem;
+    background: rgba(255, 255, 255, 0.08);
+    color: #c9cde8;
+}
+
+.tag-starter   { background: rgba(102, 126, 234, 0.25); color: #b9c4ff; }
+.tag-popular   { background: rgba(255, 107, 107, 0.22); color: #ffc0c0; }
+.tag-pro       { background: rgba(255, 181, 71, 0.22);  color: #ffd99a; }
+.tag-ultimate  { background: linear-gradient(90deg, #ffb547, #ff6b6b); color: #1a1f3a; }
+
+.uc-pack {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.uc-price {
+    margin-top: 0.35rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffb547;
+}
+
+.gaming-offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1.75rem 0;
+}
+
+.offer-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 1rem 1.1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.offer-banner.welcome {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.35), rgba(118, 75, 162, 0.35));
+}
+
+.offer-banner.bundle {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.32), rgba(255, 181, 71, 0.32));
+}
+
+.offer-banner strong {
+    display: block;
+    color: #fff;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.offer-banner p {
+    color: #f4f6ff;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.offer-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.promo-code {
+    display: inline-block;
+    background: #1a1f3a;
+    color: #ffb547;
+    padding: 0.15rem 0.55rem;
+    border-radius: 6px;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    border: 1px dashed rgba(255, 181, 71, 0.6);
+}
+
+.gaming-steps {
+    list-style: decimal inside;
+    margin-left: 0;
+    counter-reset: step;
+    padding: 0;
+}
+
+.gaming-steps li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border-left: 3px solid #ffb547;
+    margin-bottom: 0.5rem;
+    color: #f4f6ff;
+}
+
+.gaming-steps li strong { color: #ffb547; }
+
+.security-warning {
+    margin: 1.5rem 0;
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    background: rgba(255, 107, 107, 0.12);
+    border: 1px solid rgba(255, 107, 107, 0.45);
+    color: #ffd9d9;
+    font-size: 0.95rem;
+}
+
+.security-warning strong { color: #ffb3b3; }
+
+.gaming-cta {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.gaming-cta .whatsapp-btn {
+    font-size: 1.05rem;
+    padding: 0.8rem 1.4rem;
+    box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+}
+
+.gaming-support {
+    margin-top: 0.75rem;
+    color: #c9cde8;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+    .uc-grid { grid-template-columns: repeat(2, 1fr); }
+    .uc-pack { font-size: 1.1rem; }
+    .uc-price { font-size: 1.05rem; }
+}
